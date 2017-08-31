@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	.bgYellow{background-color : yellow}
+	.bgBlue{background-color:blue}
+	.bgWhite{background-color:white}
+	.border{border:3px solid red}
+</style>
+<script>
+	function changeColor(color) {
+		var c = document.getElementById("container");
+		//c.style.backgroundColor = color;
+		c.setAttribute("class", color);//<p id = "container" class = "bgYellow">
+	}
+	function toUpperCase(e) {
+		//var w = document.getElementById("word");
+		e.value = w.value.toUpperCase();
+	}
+	function addB(e) {
+		//var a =document.getElementById("box");
+		e.setAttribute("class","border");
+	}
+	function removeB(e) {
+		//var a =document.getElementById("box");
+		e.removeAttribute("class");
+	}
+</script>
+</head>
+<body onload="alert('웹페이지로딩됨');">
+	<div id="container">
+		<input type="radio" name="color" onclick="changeColor('bgYellow');">노란색
+		<input type="radio" name="color" onclick="changeColor('bgBlue');">파란색
+		<input type="radio" name="color" onclick="changeColor('bgWhite');">원래색
+		<br> <input type="text" id="word" onchange="toUpperCase(this);">
+		<br>
+		<div id="box" onmouseover="addB(this);" onmouseout="removeB(this);">마우쓰위에올려놔!</div>
+	</div>
+</body>
+</html>

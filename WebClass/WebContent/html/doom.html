@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="div">
+		<p id="p1">원래</p>
+	</div>
+	<script>
+		var newNode = document.createElement("p");
+		var textNode = document.createTextNode("새로운");
+		newNode.appendChild(textNode);
+
+		var div = document.getElementById("div")
+		div.appendChild(newNode);
+		
+		var p1 = document.getElementById("p1");
+		div.removeChild(newNode);
+		
+	</script>
+</body>
+</html>

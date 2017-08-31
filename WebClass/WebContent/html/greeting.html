@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS실습</title>
+<script>
+	function greeting(nation) {
+		if (nation == 'm') {
+
+			document.getElementById("result").innerHTML="Hi";
+		}
+		if (nation == 'k') {
+			document.getElementById("result").innerHTML="안녕하세요";
+		}
+		if (nation == 'c') {
+			document.getElementById("result").innerHTML="Ni hao";
+		}
+	}
+	
+</script>
+</head>
+<body>
+	<input type="button" onclick="greeting('k');" value="한국">
+	<button onclick="greeting('m');">미국</button>
+	<input type="button" onclick="greeting('c');" value="중국">
+	<p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@CHARSET "utf-8";
+	<style>
+*{
+	color: blue;
+	text-align:center;
+}
+p{
+	color: blue;
+	text-align:center;
+}
+h1{
+	background-color:yellow;
+	border:2px solid;
+	
+}
+h3{
+	color: pink;
+	text-align:right;
+}
+h1, h3{
+	text-decoration:underline;
+}
+#text1{
+	font-weight:bold;	
+}
+</style>
