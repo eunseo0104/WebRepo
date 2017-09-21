@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="utf-8">
 <title>Insert title here</title>
 </head>
 <body>
 	<div id="div">
-		<p id="p1">¿ø·¡</p>
+		<p id="p1">ì›ë˜</p>
 	</div>
 	<script>
 		var newNode = document.createElement("p");
-		var textNode = document.createTextNode("»õ·Î¿î");
+		var textNode = document.createTextNode("ìƒˆë¡œìš´");
 		newNode.appendChild(textNode);
 
 		var div = document.getElementById("div")
 		div.appendChild(newNode);
-		
+
 		var p1 = document.getElementById("p1");
 		div.removeChild(newNode);
-		
+
 	</script>
 </body>
 </html>

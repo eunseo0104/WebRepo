@@ -1,0 +1,79 @@
+@CHARSET "utf-8";
+#eunseo {
+  float: left;
+  margin-right: 6px;
+}
+
+#login-button {
+  margin-right: 6px;
+}
+
+div.container {
+  padding-top: 30px;
+  padding-botton: 20px;
+}
+
+#mainbody {
+  background-image: url("../image/top.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#registerbody {
+  background-color: #fff9fe;
+}
+
+#profilebody {
+  background-color: #f0f0f0;
+}
+
+#mainP {
+  margin-top: 280px;
+  margin-left: 250px;
+  font-size: 70px;
+  font-family: Agency FB Regular;
+}
+
+#subP1 {
+  display: inline;
+  margin-left: 250px;
+  font-size: 48px;
+  font-family: Aparajita;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#subP2 {
+  display: inline;
+  font-size: 48px;
+  color: #fe599b;
+  font-family: Aparajita;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#subP3 {
+  display: inline;
+  font-size: 48px;
+  font-family: Aparajita;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h4 {
+  font-family: HU바람고딕;
+  font-size: 25px;
+}
+
+h5 {
+  font-family: HU바람고딕;
+  font-size: 15px;
+}
+
+#club {
+  text-align: center;
+}
+
+#favo {
+  text-align: center;
+}

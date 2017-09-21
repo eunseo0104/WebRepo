@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Byeoneunseo profile</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/blog.css">
+	<link rel="stylesheet" type="text/js" href="../js/blog.js">
+</head>
+
+<body id="profilebody">
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ff66b9">
+		<a class="navbar-brand" href="blog.html">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);"><a class="nav-link" href=myprofile.html>profile <span class="sr-only">(current)</span>
+				</a></li>
+				<li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);"><a class="nav-link" href="club.html">club</a></li>
+				<li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);"><a class="nav-link" href="favorite.html">favorite</a></li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0" id="loginForm">
+				<input class="form-control mr-sm-2" type="text" placeholder="ID" aria-label="ID" id="id" required> <input class="form-control mr-sm-2" type="password" placeholder="PWD" aria-label="PWD" id="pwd" required>
+				<button class="btn btn-light my-2 my-sm-0" type="submit" id="login-button">Login</button>
+			</form>
+			<form id="registerForm">
+				<input type="button" class="btn btn-light" onclick="window.location.href='register.html'" value="Register">
+			</form>
+		</div>
+	</nav>
+	<div class="container" id="favo">
+		<h3>Food</h3><br>
+		<h5>시작은 음식로 하고싶었음. </h5>
+		<img src="../image/stake.jpg" alt="stake" width=200 height=200> <br>
+		<h4>가장 좋아하는 건 역시 소고기<br></h4>
+		<h5>다음은</h5>
+		<img src="../image/cheese.jpg" alt="cheese" width=330 height=200> <br>
+		<h4>치즈</h4><br><br><br><br><hr><br><br>
+
+		<h3>Favorite Star</h3>
+		<h4>이 세상에 좋아하는 연예인 딱 둘 있는데</h4>
+		<br><br>
+		<h5>하난</h5>
+		<img src="../image/leeminho.jpg" alt="leeminho" width=200 height=250>
+		<h4>이민호고<br><br></h4>
+		<h5>또 하난<br></h5>
+		<img src="../image/changuk.png" alt="changuk" width=200 height=280> <br>
+		<h4>지창욱</h4><br><br>
+		<hr><br><br>
+
+		<h3>Drama</h3>
+		<h4>고등학교에 와서 드라마를 볼 시간이 없어 다 옛날드라마</h4><br>
+		<h5>정말 감명깊게 본 드라마</h5>
+		<img src="../image/49days.jpg" alt="49days" width=400 height=300>
+		<br><br>
+		<h5>이민호가 나와서 정말 열심히 본 드라마</h5>
+		<img src="../image/cityhunter.jpg" alt="cityhunter" width=400 height=300><br><br>
+		<img src="../image/goddoctor.png" alt="goddoctor" width=500 height=280><br><br>
+		<h5>그 외에 좋아했던 드라마, 하나같이 OST가 좋은 드라마</h5>
+		<img src="../image/smell.jpg" alt="smell" width=500 height=300><br><br>
+		<img src="../image/ohae.jpg" alt="ohae" width=250 height=400>
+
+		<br><br>
+		<hr><br><br>
+
+		<h3>Animation</h3>
+		<h4>가장 좋아했던 애니메이션</h4>
+		<img src="../image/conan.jpeg" alt="conan" width=250 height=400>
+		<h5>코난!!<br><br><br></h5>
+		<h5>이상 끝</h5>
+
+
+	</div>
+	<div class="modal" id="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">로그인 결과</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+	</div>
+	<div class="modal-body">
+		<p></p>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-primary">Save changes</button>
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	</div>
+</div> </div>
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="../js/blog.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Byeoneunseo profile</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/blog.css">
+	<link rel="stylesheet" type="text/js" href="../js/blog.js">
+</head>
+
+<body id="registerbody">
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ff66b9">
+		<a class="navbar-brand" href="blog.html">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);"><a class="nav-link" href=myprofile.html>profile <span class="sr-only">(current)</span>
+				</a></li>
+				<li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);"><a class="nav-link" href="club.html">club</a></li>
+				<li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);"><a class="nav-link" href="favorite.html">favorite</a></li>
+			</ul>
+
+			<form class="form-inline my-2 my-lg-0" id="loginForm">
+				<input class="form-control mr-sm-2" type="text" placeholder="ID" aria-label="ID" id="id" required> <input class="form-control mr-sm-2" type="password" placeholder="PWD" aria-label="PWD" id="pwd" required>
+				<button class="btn btn-light my-2 my-sm-0" type="submit" id="login-button">Login</button>
+				<input type="button" class="btn btn-light" onclick="window.location.href='register.html'" value="Register">
+			</form>
+		</div>
+	</nav>
+	<div class="container">
+		<h3>Register</h3>
+		<form id="registerForm">
+			<br>
+			<h4>Grade</h4>
+			<input type="radio" id="radio" name="grade" value="1" required>1학년
+			<input type="radio" name="grade" value="2" required>2학년
+			<input type="radio" name="grade" value="3" required>3학년
+			<br><br>
+			<h4>Class</h4>
+			<select class="form-control" name="list" id="list" required>
+  		<option value = "">선택</option>
+      <option value = "1">1</option>
+    	<option value = "2">2</option>
+    	<option value = "3">3</option>
+  		<option value = "4">4</option>
+      <option value = "5">5</option>
+      <option value = "6">6</option>
+      </select>
+			<br>
+			<h4>Number</h4>
+			<div class="form-group">
+				<label>number</label>
+				<input type="text" class="form-control" id="number" placeholder="number" required>
+				<small id="emailHelp" class="form-text text-muted">Write down your number</small>
+			</div>
+			<h4>Name</h4>
+			<div class="form-group">
+				<label>name</label>
+				<input type="text" class="form-control" id="name" placeholder="name" required>
+				<small class="form-text text-muted">Write down your name</small>
+			</div>
+
+			<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" id="register-button">sign up</button>
+
+		</form>
+	</div>
+
+
+
+	<div class="modal" id="registerModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">회원가입 결과</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+				</div>
+				<div class="modal-body">
+					<p></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save changes</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">로그인 결과</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save changes</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="../js/blog.js"></script>
+</body>
+
+</html>
