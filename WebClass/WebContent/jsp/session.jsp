@@ -17,5 +17,7 @@
 	
 %>
 <h1> a : <%=cnt %></h1>
+<br>
+<%=request.getHeader("Cookie") %>
 </body>
 </html>
